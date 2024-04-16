@@ -79,7 +79,10 @@ def plot_bar_chart(model_scores, title):
 
 # Cargar el conjunto de datos desde el archivo CSV
 def main():
+    # for test :
     data = load_data('covtype.csv').head(1000)
+    #use ONLY if you have time or a high computer capacity
+    #data = load_data('covtype.csv')
     top_cor_labels=[]  
     if data is not None:
         print("Información del conjunto de datos:")
@@ -108,7 +111,7 @@ def main():
         # Crear un mapa de calor
         plt.figure(figsize=(12, 8))
         sns.heatmap(top_corr_matrix, annot=True, cmap="coolwarm")
-        plt.title("Mapa de Calor de las 10 Variables con Mayor Correlación")
+        plt.title("Mapa de Calor de las Variables con Mayor Correlación")
         plt.savefig('Mapa_de_Calor_de_Variables.png')  # Guardar el gráfico
         plt.show()  
 
