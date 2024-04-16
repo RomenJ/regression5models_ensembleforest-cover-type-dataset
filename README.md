@@ -1,0 +1,1 @@
+"Added script for comparing machine learning models on Forest Cover Type Dataset. Includes evaluation metrics like MSE, RMSE, R², and MAE. Implemented cross-validation for robust model assessment. Visualizations included."
